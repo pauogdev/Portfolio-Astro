@@ -28,6 +28,7 @@ const id = import.meta.env.ID_FORM;
                         name="name"
                         id="name"
                         placeholder="Nombre"
+                        required
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-titleName focus:shadow-md focus:placeholder-transparent"
                         
                     />
@@ -44,6 +45,7 @@ const id = import.meta.env.ID_FORM;
                         name="email"
                         id="email"
                         placeholder="example@domain.com"
+                        required                        
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-titleName focus:shadow-md focus:placeholder-transparent"
                     />
                 </div>
@@ -59,6 +61,7 @@ const id = import.meta.env.ID_FORM;
                         name="subject"
                         id="subject"
                         placeholder="Introduccir Asunto"
+                        required
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-titleName focus:shadow-md focus:placeholder-transparent"
                     />
                 </div>
@@ -74,12 +77,14 @@ const id = import.meta.env.ID_FORM;
                         name="message"
                         id="message"
                         placeholder="Escribir Mensaje"
+                        required
                         class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-titleName focus:shadow-md focus:placeholder-transparent"
                     ></textarea>
                 </div>
                 <div class="m-auto items-center text-center justify-center">
                     <button
-                        class="w-full hover:shadow-shadowcard rounded-md bg-transparent border border-titleName hover:-translate-y-2 duration-300 py-3 px-8 text-base font-semibold text-white outline-none"
+                        class="w-full hover:shadow-shadowcard rounded-md bg-transparent border border-titleName hover:-translate-y-2 duration-300 py-3 px-8 text-base font-semibold text-white outline-none"                        
+                    
                     >
                         Enviar
                     </button>
