@@ -39,7 +39,7 @@ import Separador from "../components/Separador.astro";
 		<section class="container w-full">
 			<Separador />
 		</section>
-		<section id="skills" class="py-24 ">
+		<section id="skills" class="py-24">
 			<Services />
 		</section>
 		<section class="container w-full">
@@ -81,16 +81,16 @@ import Separador from "../components/Separador.astro";
 	</main>
 </Layout>
 <script>
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
+	const links = document.querySelectorAll('a[href^="#"]');
+	links.forEach((link) => {
+		link.addEventListener("click", (e) => {
+			e.preventDefault();
+			const targetId = link.getAttribute("href");
+			document.querySelector(targetId).scrollIntoView({
+				behavior: "smooth",
+			});
+		});
+	});
+</script>
 
 <style></style>
