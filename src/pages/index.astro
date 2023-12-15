@@ -80,5 +80,17 @@ import Separador from "../components/Separador.astro";
 		</section>
 	</main>
 </Layout>
+<script>
+	const links = document.querySelectorAll('a[href^="#"]');
+	links.forEach((link) => {
+		link.addEventListener("click", (e) => {
+			e.preventDefault();
+			const targetId = link.getAttribute("href");
+			document.querySelector(targetId).scrollIntoView({
+				behavior: "smooth",
+			});
+		});
+	});
+</script>
 
 <style></style>
