@@ -5,7 +5,6 @@ interface Props {
 
 const { title } = Astro.props;
 import Header from "../components/Header.astro";
-import Card from "../components/Card.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -15,8 +14,17 @@ import Footer from "../components/Footer.astro";
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
-			content="Desarrollador Freelance en Valencia.Alcancemos tus metas juntos!🚀 En el mundo tecnológico actual, tus metas merecen destacar en el entorno digital. ¿Imaginas una aplicación móvil increíble o un sitio web que marque la diferencia?"
+			content="Desarrollador Freelance en Valencia. Alcancemos tus metas juntos🚀 En el mundo tecnológico actual, tus metas merecen destacar en el entorno digital. ¿Imaginas una aplicación móvil increíble o un sitio web que marque la diferencia?"
 		/>
+		<meta name="keywords" content="Desarrollador, Freelance, Valencia" />
+		<meta name="og:type" content="website" />
+		<meta name="og:title" content="Pau Ortega Desarrollador Freelance en Valencia" />
+		<meta
+			name="og:description"
+			content="Desarrollador Freelance en Valencia. Alcancemos tus metas juntos🚀 En el mundo tecnológico actual, tus metas merecen destacar en el entorno digital. ¿Imaginas una aplicación móvil increíble o un sitio web que marque la diferencia?"
+		/>
+		<meta name="og:url" content="https://pauortega.dev" />
+		<meta name="og:image" content="/img/Webp/Header-Logo.webp" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/icon" href="/img/Webp/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />

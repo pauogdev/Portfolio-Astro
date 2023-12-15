@@ -37,13 +37,13 @@ function MaquinaEscribir() {
             </div>
 
             <div className="pr-4 items-center mx-7 lg:pr-0 lg:mx-0 xl:pr-0 xl:mx-0">
-                <h1 className="font-bold xl:text-5xl lg:text-4x1 md:text-3x1 text-2xl mx-auto">
+                <h2 className="font-bold xl:text-5xl lg:text-4x1 md:text-3x1 text-2xl mx-auto">
                     <span className="flex mt-12 text-white">
                         <span className={`transition-opacity duration-500 ${text ? 'opacity-100' : 'opacity-0'}  h-[12vh] md:h-[14vh] lg:h-[16vh] xl:h-[20vh]`}>
                             {text}
                         </span>
                     </span>
-                </h1>
+                </h2>
             </div>
         </div>
 
