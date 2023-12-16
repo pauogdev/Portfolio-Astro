@@ -7,9 +7,6 @@ import compressor from "astro-compressor";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), compressor({gzip: true})],
-  output:'hybrid',
-  adapter: node({
-    mode: "standalone"
-  })
+  integrations: [tailwind(), react(), compressor({gzip: true})]
+
 });
