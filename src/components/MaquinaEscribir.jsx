@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 function MaquinaEscribir() {
-    const texts = ['Programador Freelance.', 'Programador Mobile.', 'Programador Blockchain.'];
+    const texts = ['Programador Freelance.', 'Programador Web','Programador Mobile.', 'Programador Blockchain.'];
     const [index, setIndex] = useState(0);
     const [isDelete, setIsDelete] = useState(false);
     const [text, setText] = useState('');
