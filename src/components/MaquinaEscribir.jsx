@@ -29,8 +29,8 @@ function MaquinaEscribir() {
     }, [text, index, texts,]);
 
     return (
-        <div className="container">
-            <div className="pr-4 text-center lg:text-left xl:text-left">
+        <section className="container">
+            <div className="text-center lg:text-left xl:text-left">
                 <h1 className="xl:text-6xl lg:text-5x1 md:text-4x1 text-3xl font-bold items-center">
                     <span className="pb-4 text-titleName">Pau Ortega</span>
                 </h1>
@@ -44,10 +44,15 @@ function MaquinaEscribir() {
                         </span>
                     </span>
                 </h2>
+                <h2 className="font-bold md:text-4xl text-2xl mx-auto flex mt-12 h-[12vh] md:h-[14vh] lg:h-[16vh] xl:h-[20vh]">
+                <span className='bg-gradient-to-br from-white via-titleName to-titleName bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient'>
+                    FullStack | Mobile | Blockchain
+                    </span>
+                
+                    </h2>
             </div>
-        </div>
-
-
+        </section>
     )
 }
 export default MaquinaEscribir;
+

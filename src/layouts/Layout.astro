@@ -58,4 +58,28 @@ import Footer from "../components/Footer.astro";
         src: url("../public/fonts/Alegreya/Alegreya-Regular.ttf") format("truetype");
         font-display: swap;
     }
+
+	.animate-gradient {
+	  background-image: linear-gradient(
+		to right,
+		theme(colors.gray.500),
+		theme(colors.titleName)
+		theme(colors.gray.300),
+		theme(colors.titleName),
+		theme(colors.gray.500)
+		theme(colors.titleName),
+		
+	  );
+	  background-size: 200% auto;
+	  animation: gradient 8s linear infinite;
+	}
+	
+	@keyframes gradient {
+	  0% {
+		background-position: 0% 50%;
+	  }
+	  100% {
+		background-position: 200% 50%;
+	  }
+	}
 </style>
