@@ -10,7 +10,7 @@ import Clientes from "../components/Clientes.astro";
 import Historia from "../components/Historia.astro";
 import Modelos from "../components/Modelos.astro";
 import Form from "../components/Form.astro";
-import Separador from "../components/Separador.astro";
+import Separador from "../components/Separador.astro";  
 import Cabecera from "../components/Cabecera.astro";
 
 export const prerender = true;
@@ -24,7 +24,7 @@ export const prerender = true;
 			<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 w-full">
 				<div class="grid grid-rows-1 my-auto">
 					<div class="flex flex-col container">
-						<Cabecera />
+						<Cabecera/>
 					</div>
 					<div
 						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl-grid-cols-2 mt-10"
@@ -64,28 +64,23 @@ export const prerender = true;
 		</section>
 		<section class="container w-full">
 			<Separador /> -->
+		</section>
+		<section id="historia" class="py-24">
+			<Historia />
+		</section>
+		<section class="container w-full">
+			<Separador />
+		</section>
+		<section id="modelos" class="py-24">
+			<Modelos />
+		</section>
+		<section class="container w-full">
+			<Separador />
+		</section>
+		<section id="contacto" class="py-24">
+			<Form />
+		</section>
 	</main>
-	<section id="historia" class="py-24">
-		<Historia />
-	</section>
-	<section class="container w-full">
-		<Separador />
-	</section>
-	<section id="modelos" class="py-24">
-		<Modelos />
-	</section>
-	<section class="container w-full">
-		<Separador />
-	</section>
-	<section id="clientes" class="py-24">
-		<Clientes />
-	</section>
-	<section class="container w-full">
-		<Separador />
-	<section id="contacto" class="py-24">
-		<Form />
-	</section>
-	</section>
 </Layout>
 <script>
 	const links = document.querySelectorAll('a[href^="#"]');
