@@ -16,6 +16,10 @@ export default {
 				shadowimg: '10px 10px 19px #1c1e22, -10px -10px 19px #262a2e',
 				shadowcard: '10px 10px 19px #46494e, -10px -10px 19px #323233',
 			},
+
+			fontFamily: {
+				mono: ['Consolas', 'monospace'],
+			},
 			
 		},
 	},

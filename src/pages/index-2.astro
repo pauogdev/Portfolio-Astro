@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Social from "../components/Social.astro";
+import BestSkills from "../components/BestSkills.astro";
+import Services from "../components/Services.astro";
+import Experiencia from "../components/Experiencia.astro";
+import Proyectos from "../components/Proyectos.astro";
+import Clientes from "../components/Clientes.astro";
+import Historia from "../components/Historia.astro";
+import Modelos from "../components/Modelos.astro";
+import Form from "../components/Form.astro";
+import Separador from "../components/Separador.astro";  
+import Cabecera from "../components/Cabecera.astro";
+
+export const prerender = true;
+---
+
+<Layout title="Pau Ortega">
+	<main
+		class="container mx-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+	>
+		<section class="py-24">
+			<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 w-full">
+				<div class="grid grid-rows-1 my-auto">
+					<div class="flex flex-col container">
+						<Cabecera/>
+					</div>
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl-grid-cols-2 mt-10"
+					>
+						<Social />
+						<BestSkills />
+					</div>
+				</div>
+				<div class="flex-1 m-0 mx-auto mt-12">
+					<Card />
+				</div>
+			</div>
+		</section>
+		<section class="container w-full">
+			<Separador />
+		</section>
+		<section id="skills" class="py-24">
+			<Services />
+		</section>
+		<section class="container w-full">
+			<Separador />
+		</section>
+		<section id="experiencia" class="py-24">
+			<Experiencia />
+		</section>
+		<section class="container w-full">
+			<Separador />
+		</section>
+		<section id="portfolio" class="py-24">
+			<Proyectos />
+		</section>
+		<section class="container w-full">
+			<Separador />
+		</section>		
+		</section>
+		<section id="historia" class="py-24">
+			<Historia />
+		</section>
+		<section class="container w-full">
+			<Separador />
+		</section>
+		<section id="modelos" class="py-24">
+			<Modelos />
+		</section>
+		<section class="container w-full">
+			<Separador />
+		</section>
+		<section id="clientes" class="py-24">
+			<Clientes />
+		</section>
+		<!--<section class="container w-full">
+			<Separador />
+		<section id="contacto" class="py-24">
+			<Form />
+		</section> -->
+	</main>
+</Layout>
+<script>
+	const links = document.querySelectorAll('a[href^="#"]');
+	links.forEach((link) => {
+		link.addEventListener("click", (e) => {
+			e.preventDefault();
+			const targetId = link.getAttribute("href");
+			document.querySelector(targetId).scrollIntoView({
+				behavior: "smooth",
+			});
+		});
+	});
+</script>
+
+<style></style>
